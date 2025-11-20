@@ -172,7 +172,7 @@ class QueueIntegration extends Feature
 
             // If the parent transaction was not sampled we also stop the queue job from being recorded
             if ($context->getParentSampled() === false) {
-                return;
+                //return;
             }
         } else {
             $context = new SpanContext;
